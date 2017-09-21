@@ -15,6 +15,7 @@
     <h1>Welcome to Colour Scheme Vs Colour Scheme</h1>
     <p>Here, we test our colour scheme and see how it stacks up against all permutations of the colours as background and foreground colours.</p>
     <p>I <em>think</em> this could be handy for part of our accessibility testing.</p>
+    <p>If you see a blank space on a background, that's because the same foreground colour is being used, e.g. white on white.</p>
     <?php
       $bg_colours = [
         "white" => "#ffffff",
