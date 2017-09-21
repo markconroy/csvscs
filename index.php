@@ -18,7 +18,7 @@
     <p>If you see a blank space on a background, that's because the same foreground colour is being used, e.g. white on white.</p>
     <p>This is a work in progress, <a href="https://github.com/markconroy/csvscs">source code is available on GitHub</a>. Pull requests are welcome.
     <?php
-      $bg_colours = [
+      $colours = [
         "white" => "#ffffff",
         "colour_1" => "#724C98",
         "colour_2" => "#109CC0",
@@ -41,20 +41,20 @@
         "white" => "#ffffff",
       ];
 
-      foreach ($bg_colours as $bg_colour_key => $bg_colour_value) {
-        print '<h2>' . $bg_colour_key . ' vs Colour Scheme</h2>';
-        print '<div style="background: ' . $bg_colour_value . '; padding: 1rem; margin-bottom: 1rem;">';
-        foreach ($bg_colours as $fg_colour_key => $fg_colour_value) {
+      foreach ($colours as $colour_key => $colour_value) {
+        print '<h2>' . $colour_key . ' vs Colour Scheme</h2>';
+        print '<div style="background: ' . $colour_value . '; padding: 1rem; margin-bottom: 1rem;">';
+        foreach ($colours as $fg_colour_key => $fg_colour_value) {
           print '<h1 style="color: ' . $fg_colour_value . ';">Heading 1 with ' . $fg_colour_key . '</h1>';
           print '<h2 style="color: ' . $fg_colour_value . ';">Heading 2 with ' . $fg_colour_key . '</h2>';
           print '<h3 style="color: ' . $fg_colour_value . ';">Heading 3 with ' . $fg_colour_key . '</h3>';
           print '<h4 style="color: ' . $fg_colour_value . ';">Heading 4 with ' . $fg_colour_key . '</h4>';
           print '<h5 style="color: ' . $fg_colour_value . ';">Heading 5 with ' . $fg_colour_key . '</h5>';
           print '<h6 style="color: ' . $fg_colour_value . ';">Heading 6 with ' . $fg_colour_key . '</h6>';
-          print '<p style="color: ' . $fg_colour_value . '; margin: 1rem; ">This is a test of ' . $fg_colour_key . ' against ' . $bg_colour_key . '. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, <strong>This is some strong text</strong> tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>';
+          print '<p style="color: ' . $fg_colour_value . '; margin: 1rem; ">This is a test of ' . $fg_colour_key . ' against ' . $colour_key . '. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, <strong>This is some strong text</strong> tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>';
         }
         foreach ($greys as $grey_colour_key => $grey_colour_value) {
-          print '<p style="color: ' . $grey_colour_value . '; margin: 1rem; ">This is a test of ' . $grey_colour_key . ' against ' . $bg_colour_key . '. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, <strong>This is some strong text</strong> tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>';
+          print '<p style="color: ' . $grey_colour_value . '; margin: 1rem; ">This is a test of ' . $grey_colour_key . ' against ' . $colour_key . '. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, <strong>This is some strong text</strong> tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>';
         }
         print '</div>';
       }
