@@ -17,10 +17,13 @@
     <p>I <em>think</em> this could be handy for part of our accessibility testing.</p>
     <?php
       $bg_colours = [
-        "colour_1" => "#ff0000",
-        "colour_2" => "#ffff00",
-        "colour_3" => "#BADA55",
-        "colour_4" => "#7D2BF6",
+        "white" => "#ffffff",
+        "colour_1" => "#724C98",
+        "colour_2" => "#109CC0",
+        "colour_3" => "#CD7D00",
+        "colour_4" => "#7EBC3D",
+        "colour_5" => "#CE1334",
+        "colour_5" => "#99885C",
       ];
       $greys = [
         "black" => "#000000",
